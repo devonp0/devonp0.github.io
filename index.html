@@ -4,23 +4,42 @@
      <meta charset="utf-8">
      <title>What I've Learned</title>
         <style>
-          body{background-color:rgb(234, 240, 147);}
+          
+          body{background-color:rgb(171, 163, 131);}
+          
           #learned-specific-color{color:rgb(224, 54, 224);}
+          
           #font-learned{font-family: cursive, sans-serif;}
+          
           .big-words{font-size:2em;}
+          
           .bold-italic{font-weight:bold;
                        font-style:italic;}
+          
           .line-space{line-height:3em;}
+          
           #middle{text-align:center;}
+          
           #decor{text-decoration:underline;}
-          #learned-15{background:rgb(227, 143, 227);
+          
+          #learned-15{background:rgb(230, 228, 218);
                       width:60%;
                       height:150px;
-                      overflow:auto;}
+                      overflow:auto;
+                      border:3px dashed rgb(107, 107, 107);}
+          
+          #page{margin:10px;
+                border:1px solid rgb(135, 0, 0);
+                border-top: 10px solid rgb(0, 0, 0);}
+          
+          #text{margin:15px;}
+          
+          .frame{border:5px ridge rgb(110, 110, 110);}
+          
         </style>
   </head>
     <body>
-  <h1 id="learned-head">What I've learned</h1>
+  <div id="page"><div id="text"><h1 id="learned-head">What I've learned</h1>
   
   <h2>What I learned about HTML on <time datetime="2020-07-07">7/7/2020</time></h2>
      <ul>
@@ -37,7 +56,7 @@
   <h2>What I learned about HTML on <time datetime="2020-07-08">7/8/2020</time></h2>
     <ul>
       <li>I learned how to insert images, and make them so the size changes to the size of device your       using. <br>
-        <img src="https://static.highsnobiety.com/thumbor/xg3KlN5PNoCnza9OVMSvGbPojM4=/fit-in/1200x720/smart/static.highsnobiety.com/wp-content/uploads/2019/12/10100515/juice-wrld-autopsy-inconclusive-percocet-00.jpg" 
+        <img class="frame" src="https://static.highsnobiety.com/thumbor/xg3KlN5PNoCnza9OVMSvGbPojM4=/fit-in/1200x720/smart/static.highsnobiety.com/wp-content/uploads/2019/12/10100515/juice-wrld-autopsy-inconclusive-percocet-00.jpg" 
         alt="Juice Wrld"
         width="300" height="175"
     
@@ -49,8 +68,8 @@
       <li>I learned how to insert audio, and make it autoplay, loop, and manually control it.<br>
         <audio controls src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/birds.mp3"></audio>         </li>
       <li>I learned how to embed a video and audio.<br>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/NOjrt1mrD8Q"                       frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-               picture" allowfullscreen></iframe>
-      <iframe width="560" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/647171277&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/uiceheidd" title="Juice WRLD" target="_blank" style="color: #cccccc; text-decoration: none;">Juice WRLD</a> · <a href="https://soundcloud.com/uiceheidd/juice-wrld-run" title="Juice Wrld - RUN" target="_blank" style="color: #cccccc; text-decoration: none;">Juice Wrld - RUN</a></div></li>
+        <iframe class="frame" width="560" height="315" src="https://www.youtube.com/embed/NOjrt1mrD8Q"                       frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-               picture" allowfullscreen></iframe>
+      <iframe class="frame" width="560" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/647171277&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/uiceheidd" title="Juice WRLD" target="_blank" style="color: #cccccc; text-decoration: none;">Juice WRLD</a> · <a href="https://soundcloud.com/uiceheidd/juice-wrld-run" title="Juice Wrld - RUN" target="_blank" style="color: #cccccc; text-decoration: none;">Juice Wrld - RUN</a></div></li>
     <li>I learned how to create a form.<br>
       
         <form action="success.html" method="get">
@@ -66,8 +85,8 @@
       </form></li>
     <br><li>I learned how to make a simple table.
         
-        <table>
-          <tr>
+        <table>  
+            <tr>
             <th>Artist</th>
             <th>Opinion</th>
           </tr>
@@ -87,7 +106,7 @@
             <td>Uzi</td>
             <td>Good</td>
           </tr>
-       </table></li></ul>
+        </table></li></ul>
         
 <h2>Review to see what I remember</h2>
   <ul>
@@ -99,7 +118,7 @@
   <li>I still remember how to superscript and subscript, such as H<sub>2</sub>O.</li>
   <li>I still remember how to insert links, such as <a href="https://www.lynda.com/">Lynda</a>.</li>
   <li>I still remember how to insert images and make it a link, such as...<br>
-      <a href="https://www.tiktok.com/en/"><img src="https://www.numerama.com/content/uploads/2018/11/tik-tok.jpg"
+      <a href="https://www.tiktok.com/en/"><img class="frame"  src="https://www.numerama.com/content/uploads/2018/11/tik-tok.jpg"
            alt="TikTok logo"
            width="300" height="175"
             srcset="https://www.numerama.com/content/uploads/2018/11/tik-tok.jpg 2x,
@@ -107,7 +126,7 @@
                     https://www.numerama.com/content/uploads/2018/11/tik-tok.jpg 4x, 
         https://www.numerama.com/content/uploads/2018/11/tik-tok.jpg .5x"></a></li>
    <li>I still remember how to insert video and audio, such as...<br>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/h3EJICKwITw?start=8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+      <iframe class="frame" width="560" height="315" src="https://www.youtube.com/embed/h3EJICKwITw?start=8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
    <li>I still remember to an extent how to create a form, such as...<br>
      <form action="success.html" method="get">
        <label name="name">Name</label>
@@ -164,9 +183,9 @@
   <li id=decor>I learned how to decorate text and links.</li>
   <li>I learned how to change the size of boxes around text and words</li>
   <li>I learned how to have scroll bars.</li>
-</ul></div>
+</ul></div></div>
 
 
        <h6>This webpage was created by Devon Prairie.</h6>
-    </body>
+    </div></body>
 </html>

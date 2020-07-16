@@ -7,6 +7,8 @@
           
           body{background-color:rgb(171, 163, 131);}
           
+          #learned-head{font-size:40px;}
+          
           #learned-specific-color{color:rgb(40, 0, 80);}
           
           #font-learned{font-family: cursive, sans-serif;}
@@ -32,7 +34,7 @@
           
           #page{margin:75px;
                 border:1px solid rgb(135, 0, 0);
-                border-top: 10px solid rgb(0, 0, 0);}
+                border-top: 1px solid rgb(135, 0, 0);}
           
           #text{margin-left:50px;
                 margin-top:20px;}
@@ -43,12 +45,131 @@
           margin-top:15px;
           margin-bottom:4px;}
           
+          @import url(http://fonts.googleapis.com/css?family=Capriola);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  font-family: Capriola, Helvetica, sans-serif;
+}
+#cssmenu {
+  width: auto;
+  height: auto;
+  padding-bottom: 4px;
+}
+#cssmenu.align-right {
+  float: right;
+}
+#cssmenu.align-right ul li {
+  float: right;
+  margin-right: 0;
+  margin-left: 4px;
+}
+#cssmenu.align-right ul li:first-child,
+#cssmenu.align-right ul li:first-child > a {
+  border-bottom-right-radius: 3px;
+}
+#cssmenu #bg-one,
+#cssmenu #bg-two,
+#cssmenu #bg-three,
+#cssmenu #bg-four {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#cssmenu #bg-one {
+  height: 10px;
+  background: #0f71ba;
+  background-color: rgb(135, 0, 0);
+}
+#cssmenu #bg-two {
+  height: 59px;
+  z-index: 2;
+  background: url('images/bg.png');
+}
+#cssmenu #bg-three {
+  bottom: 4px;
+  height: 55px;
+  z-index: 3;
+  background: #222222;
+  background: -moz-linear-gradient(top, #555555 0%, #222222 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #555555), color-stop(100%, #222222));
+  background: -webkit-linear-gradient(top, #555555 0%, #222222 100%);
+  background: -o-linear-gradient(top, #555555 0%, #222222 100%);
+  background: -ms-linear-gradient(top, #555555 0%, #222222 100%);
+  background: linear-gradient(to bottom, #555555 0%, #222222 100%);
+}
+#cssmenu #bg-four {
+  bottom: 4px;
+  height: 54px;
+  z-index: 4;
+  background: url('images/bg.png');
+}
+#cssmenu ul {
+  height: 59px;
+}
+#cssmenu ul li {
+  float: left;
+  margin-right: 4px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  z-index: 5;
+}
+#cssmenu ul li a {
+  padding: 24px 30px 20px 24px;
+  margin-bottom: 4px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-decoration: none;
+}
+#cssmenu ul li:first-child,
+#cssmenu ul li:first-child > a {
+  border-bottom-left-radius: 3px;
+}
+#cssmenu ul li:hover,
+#cssmenu ul li.active {
+  background-color: rgb(135, 0, 0);
+}
+#cssmenu ul li a:hover,
+#cssmenu ul li.active > a {
+  background: url(https://codepen.io/devonp0/pen/KKVRzEP?editors=1000);
+  color: rgb(255, 255, 255);
+  background-color: rgb(135, 0, 0);
+}
+
+          
         </style>
   </head>
     <body>
-  <div id="page"><div id="text"><h1 id="learned-head">What I've learned</h1>
-  
-  <h2>What I learned about HTML on <time datetime="2020-07-07">7/7/2020</time></h2>
+      <div id="page">
+<div id="cssmenu"><div id="bg-one"></div><div id="bg-two"></div><div id="bg-three"></div><div id="bg-four"></div>
+<ul>
+   <li class="active"><a href="#"><span>Home</span></a></li>
+  <li><a href="#<time>7/7/2020</time>"><span><time>7/7/2020</time></span></a></li>
+  <li><a href="#<time>7/8/2020</time>"><span><time>7/8/2020</time></span></a></li>
+  <li><a href="#review"><span>Review</span></a></li>
+  <li><a href="#<time>7/13/2020</time>"><span><time>7/13/2020</time></span></a></li>
+  <li><a href="#<time>7/14/2020</time>"><span><time>7/14/2020</time></span></a></li>
+  <li><a href="#<time>7/15/2020</time>"><span><time>7/15/2020</time></span></a></li>
+  <li><a href="#<time>7/16/2020</time>"><span><time>7/16/2020</time></span></a></li>
+  <li class="last"><a href="#<time>7/17/2020</time>"><span><time>7/17/2020</time></span></a></li>
+</ul>
+</div>
+      
+     <div id="text"><h1 id="learned-head">What I've learned</h1> 
+    
+    <h2 id="<time>7/7/2020</time>">What I learned about HTML on <time datetime="2020-07-07">7/7/2020</time></h2>
      <ul>
       <li>I learned how to make lists.</li>
       <li>I learned how to italicize words and sentances when needed, such as <em>favorite</em>.</li>
@@ -60,7 +181,7 @@
         <a href="https://www.surveymonkey.com/dashboard/">SurveyMonkey</a>.</li>
     </ul>
     
-  <h2>What I learned about HTML on <time datetime="2020-07-08">7/8/2020</time></h2>
+  <h2 id="<time>7/8/2020</time>">What I learned about HTML on <time datetime="2020-07-08">7/8/2020</time></h2>
     <ul>
       <li>I learned how to insert images, and make them so the size changes to the size of device your       using. <br>
         <img class="frame" src="https://static.highsnobiety.com/thumbor/xg3KlN5PNoCnza9OVMSvGbPojM4=/fit-in/1200x720/smart/static.highsnobiety.com/wp-content/uploads/2019/12/10100515/juice-wrld-autopsy-inconclusive-percocet-00.jpg" 
@@ -115,7 +236,7 @@
           </tr>
         </table></li></ul>
         
-<h2>Review to see what I remember</h2>
+<h2 id="review">Review to see what I remember</h2>
   <ul>
   <li>I still remember how to make lists.</li>
   <li>I still remember how to italicize such as <em>favorite</em>.</li>
@@ -169,19 +290,19 @@
           </tr>
          </table></li></ul>
 
-<h2>What I've learned about HTML and CSS on <time datetime="2020-07-13" >7/13/2020</time></h2>
+<h2 id="<time>7/13/2020</time>">What I've learned about HTML and CSS on <time datetime="2020-07-13" >7/13/2020</time></h2>
 <ul>
   <li>I learned how to add color.</li>
   <li id="learned-specific-color">I also learned how to add color to specific places.</li>
   <li>I learned how to insert internal links, such as...<a href="#learned-head">What I've learned</a></li>
 </ul>
 
-<h2>What I've learned about HTML and CSS on <time datetime="2020-07-14">7/14/2020</time></h2>
+<h2 id="<time>7/14/2020</time>">What I've learned about HTML and CSS on <time datetime="2020-07-14">7/14/2020</time></h2>
 <ul>
   <li id="font-learned">I learned how to change the fonts to a specific spot or everywhere.</li>
 </ul>
   
-<div id="learned-15"><div id="inside"><h2>What I've learned about HTML and CSS on <time datetime="2020-07-15">7/15/2020</time></h2>
+<div id="learned-15"><div id="inside"><h2 id="<time>7/15/2020</time>">What I've learned about HTML and CSS on <time datetime="2020-07-15">7/15/2020</time></h2>
 <ul>
   <li>I learned how to change font <span class="big-words">size</span>.</li>
   <li class="bold-italic">I learned how to bold and italisize through CSS</li>
@@ -192,9 +313,20 @@
   <li>I learned how to have scroll bars.</li>
   <li>I learned how to add and customize borders.</li>
   <li>I learned how to add margins and customize them.</li>
-</ul></div></div></div>
+</ul></div></div>
 
+<h2 id="<time>7/16/2020</time>">What I've learned about HTML and CSS on <time datetime="2020-07-16">7/16/2020</time></h2>
 
-<div id="created-devon"<h6>This webpage was created by Devon Prairie.</h6></div>
+<ul>
+  <li>I learned how to take stuff and edit if from another website, such as the navigation bar.</li>
+</ul>
+
+<h2 id="<time>7/17/2020</time>">What I've learned about HTML and CSS on <time datetime="2020-07-17">7/17/2020</time></h2>
+
+<ul>
+  <li></il>
+</ul>
+
+</div><div id="created-devon"<h6>This webpage was created by Devon Prairie.</h6></div>
     </div></body>
 </html>
